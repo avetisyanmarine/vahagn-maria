@@ -5,6 +5,8 @@ import Church from "../../assets/image/church.jpg";
 import Restaurant from "../../assets/image/restoran.jpg";
 import HeartLine from "../../assets/image/heartline.png";
 import Photo3 from "../../assets/image/examp2.jpg";
+import Photof2 from "../../assets/image/photof2.jpg";
+import Photof3 from "../../assets/image/photof3.jpg";
 import Bant from "../../assets/image/bant.png";
 import LineAes from "../../assets/image/lineaes.png";
 
@@ -12,6 +14,7 @@ export const ForthPage = () => {
   return (
     <ForthPagePart>
       <Container>
+        <img src={Photof2} className="rounded-[15px]" alt="" />
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
@@ -44,6 +47,9 @@ export const ForthPage = () => {
         </Flexible>
         <hr className="mx-auto my-8 w-[300px]" />
       </div>
+      <Container>
+        <img src={Photof3} className="rounded-[15px] mb-10" alt="" />
+      </Container>
     </ForthPagePart>
   );
 };
