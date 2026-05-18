@@ -27,7 +27,7 @@ export const ThirdPage = () => {
             className="20px"
             // uniqueMargin={50}
             // imageSize={80}
-            smallText="Զովունի 12 փողոց"
+            smallText="Զովունի 12 փողոց, տուն 29"
             number={"12:00"}
             bigText="ՀԱՐՍԻ ՏՈՒՆ"
           />

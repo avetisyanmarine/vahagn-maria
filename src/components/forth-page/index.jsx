@@ -14,7 +14,7 @@ export const ForthPage = () => {
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
-            bigText={"Հավհաննավանք"}
+            bigText={"Հովհաննավանք"}
             mapSrc={"https://maps.app.goo.gl/Fnqg4WkXTtxn5F8N7"}
           />
           <ForthPageBlock
