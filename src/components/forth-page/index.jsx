@@ -4,7 +4,6 @@ import { ForthPagePart, ForthPagePartContext } from "./styled";
 import Church from "../../assets/image/church.jpg";
 import Restaurant from "../../assets/image/restoran.webp";
 import HeartLine from "../../assets/image/heartline.png";
-import Photof2 from "../../assets/image/photof2.jpg";
 import LineAes from "../../assets/image/lineaes.png";
 import AttendanceGuests from "../AttendanceGuests";
 
@@ -12,7 +11,6 @@ export const ForthPage = () => {
   return (
     <ForthPagePart>
       <Container>
-        <img src={Photof2} className="rounded-[15px]" alt="" />
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
