@@ -99,18 +99,18 @@ export const SecondPage = () => {
             <img
               src={PhotoGroup1}
               alt=""
-              className="h-1/3 object-cover rounded-[10px]"
+              className="h-1/2 object-cover rounded-[10px] grayscale"
             />
             <img
               src={PhotoGroup2}
               alt=""
-              className="h-1/3 object-cover rounded-[10px]"
+              className="h-1/2 object-cover rounded-[10px] grayscale"
             />
-            <img
+            {/* <img
               src={PhotoGroup3}
               alt=""
-              className="h-1/3 object-cover rounded-[10px]"
-            />
+              className="h-1/3 object-cover rounded-[10px] grayscale"
+            /> */}
           </div>
         </div>
       </Container>
@@ -141,7 +141,7 @@ export const SecondPage = () => {
           )}
         </ThirdPagePartCalendar>
 
-        <img src={PhotoF1} alt="" className="rounded-[15px] mt-[50px]" />
+        <img src={PhotoF1} alt="" className="rounded-[15px] mt-[50px] grayscale" />
       </Container>
     </SecondPagePart>
   );

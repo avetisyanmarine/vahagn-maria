@@ -12,7 +12,6 @@ const FirstPagePart = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: none;
   }
 `;
 const FirstPagePartContext = styled.div`

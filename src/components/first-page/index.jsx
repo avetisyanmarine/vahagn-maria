@@ -5,7 +5,7 @@ import { FirstPagePart, FirstPagePartContext } from "./styled";
 export const FirstPage = () => {
   return (
     <FirstPagePart>
-      <img className="grayscale contrast-125 brightness-105" src={MainPhoto} />
+      <img className="grayscale" src={MainPhoto} />
       <Container>
         <FirstPagePartContext>
           <div
