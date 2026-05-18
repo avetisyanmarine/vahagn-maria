@@ -3,40 +3,40 @@ import Music from "../../assets/vectors/music.png";
 import Song from "../../assets/audio/song.mp3";
 import { useRef, useState, useEffect } from "react";
 
-export const MusicPage = () => {
+export const MusicPage = ({ isPlaying }) => {
   const audioRef = useRef(null);
-  const [showTip, setShowTip] = useState(true);
-  const [isFading, setIsFading] = useState(false);
-
-  const hideTip = () => {
-    setIsFading(true);
-    setTimeout(() => setShowTip(false), 350);
-  };
-
-  const handleClick = () => {
-    if (audioRef.current) {
-      audioRef.current.play();
-    }
-    hideTip();
-  };
+  const [manualPlay, setManualPlay] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(hideTip, 4000);
-    return () => clearTimeout(timeout);
-  }, []);
+    if (isPlaying && audioRef.current) {
+      audioRef.current
+        .play()
+        .catch((err) => console.log("Playback error:", err));
+      setManualPlay(true);
+    }
+  }, [isPlaying]);
+
+  const handleClick = () => {
+    if (manualPlay) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+    setManualPlay(!manualPlay);
+  };
 
   return (
     <MusicPagePart onClick={handleClick}>
       <img loading="lazy" src={Music} alt="music" />
       <audio ref={audioRef} src={Song} loop />
-      {showTip && (
+      {/* {showTip && (
         <div
           onClick={handleClick}
           className={`tip ${isFading ? "fade-out" : ""}`}
         >
           Սեղմեք այստեղ
         </div>
-      )}
+      )} */}
     </MusicPagePart>
   );
 };

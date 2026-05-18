@@ -2,7 +2,7 @@ import { Container, Flexible } from "../../GlobalStyle";
 import { ForthPageBlock } from "./fortg-page-block";
 import { ForthPagePart, ForthPagePartContext } from "./styled";
 import Church from "../../assets/image/church.jpg";
-import Restaurant from "../../assets/image/restoran.webp";
+import Restaurant from "../../assets/image/restoran.jpg";
 import HeartLine from "../../assets/image/heartline.png";
 import LineAes from "../../assets/image/lineaes.png";
 import AttendanceGuests from "../AttendanceGuests";
