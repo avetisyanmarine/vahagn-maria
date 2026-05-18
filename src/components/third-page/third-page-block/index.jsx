@@ -1,6 +1,5 @@
 import { ThirdPagePartContext } from "../styled";
 import { ThirdPageBlockPart, ThirdPageBlockPartContext, ThirdPageBlockPartSvg } from "./styled";
-import Arrow from "../../../assets/image/arrow.png";
 
 export const ThirdPageBlock = ({
   ImageSrc,

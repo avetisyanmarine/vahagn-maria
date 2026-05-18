@@ -1,7 +1,6 @@
 import MainPhoto from "../../assets/image/mainPhoto.jpg";
 import { Container, Flexible } from "../../GlobalStyle";
 import { FirstPagePart, FirstPagePartContext } from "./styled";
-import Srtik from "../../assets/image/srtik.png";
 
 export const FirstPage = () => {
   return (
@@ -10,13 +9,13 @@ export const FirstPage = () => {
       <Container>
         <FirstPagePartContext>
           <div
-            className="mt-7 text-[#ffff] maintext"
+            className="mt-3 text-[#ffff] maintext"
             style={{ textShadow: "5px 7px 9px #000" }}
           >
             <h4>Հարսանյաց Հրավեր</h4>
             <div data-aos="fade-up" className="text-center absolute bottom-33">
-              <h3>Ռոբերտ և Ժասմին</h3>
-              <h4>03.06.2026</h4>
+              <h3>Վահագն և Մարիա</h3>
+              <h4>12.07.2026</h4>
             </div>
           </div>
         </FirstPagePartContext>

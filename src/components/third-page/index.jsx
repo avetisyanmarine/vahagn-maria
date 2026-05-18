@@ -19,14 +19,16 @@ export const ThirdPage = () => {
         <ThirdPagePartContext>
           <ThirdPageBlock
             // imageSize={80}
-            number={"11:30"}
+            number={"11:00"}
+            smallText="Զովունի 13 փողոց, 24/1"
             bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
           />
           <ThirdPageBlock
-          className="20px"
+            className="20px"
             // uniqueMargin={50}
             // imageSize={80}
-            number={"13:00"}
+            smallText="Զովունի 12 փողոց"
+            number={"12:00"}
             bigText="ՀԱՐՍԻ ՏՈՒՆ"
           />
           <ThirdPageBlock
@@ -34,13 +36,13 @@ export const ThirdPage = () => {
             imageSize={80}
             number={"15:00"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
-            smallText="Սուրբ Երրորդություն եկեղեցի"
+            smallText="Հովհաննավանք"
           />
           <ThirdPageBlock
             // imageSize={80}
-            number={"17:00"}
+            number={"17:30"}
             bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
-            smallText="Հրաշք Այգի Ռեստորան"
+            smallText="Աղաբաբյանս Ռեստորան"
           />
         </ThirdPagePartContext>
         <ThirdPagePartMini>

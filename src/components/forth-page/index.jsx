@@ -2,13 +2,11 @@ import { Container, Flexible } from "../../GlobalStyle";
 import { ForthPageBlock } from "./fortg-page-block";
 import { ForthPagePart, ForthPagePartContext } from "./styled";
 import Church from "../../assets/image/church.jpg";
-import Restaurant from "../../assets/image/restoran.jpg";
+import Restaurant from "../../assets/image/restoran.webp";
 import HeartLine from "../../assets/image/heartline.png";
-import Photo3 from "../../assets/image/examp2.jpg";
 import Photof2 from "../../assets/image/photof2.jpg";
-import Photof3 from "../../assets/image/photof3.jpg";
-import Bant from "../../assets/image/bant.png";
 import LineAes from "../../assets/image/lineaes.png";
+import AttendanceGuests from "../AttendanceGuests";
 
 export const ForthPage = () => {
   return (
@@ -18,13 +16,13 @@ export const ForthPage = () => {
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
-            bigText={"Սուրբ Երրորդություն եկեղեցի"}
-            mapSrc={"https://maps.app.goo.gl/v8pxPrzxB87LT6mB9"}
+            bigText={"Հավհաննավանք"}
+            mapSrc={"https://maps.app.goo.gl/Fnqg4WkXTtxn5F8N7"}
           />
           <ForthPageBlock
             ImageSrc={Restaurant}
-            bigText={"Հրաշք Այգի Ռեստորան"}
-            mapSrc={"https://maps.app.goo.gl/HRnwqHftXVUVMhtMA"}
+            bigText={"Աղաբաբյանս Ռեստորան"}
+            mapSrc={"https://yandex.com/maps/org/79838143048/reviews/?ll=44.460219%2C40.209697&z=7"}
           />
         </ForthPagePartContext>
       </Container>
@@ -42,13 +40,15 @@ export const ForthPage = () => {
           հարմարավետ կոշիկներ` պարելու համար:
           <br />
           <br />
+          Թույլ տանք, որ այդ օրը սպիտակ զգեստով լինի միայն հարսնացուն 🤍
+          <br />
           Հարսի պարի և հրավառության ընթացքում կխնդրենք ծնողներին ուշադիր լինել
           իրենց բալիկների նկատմամբ:
         </Flexible>
         <hr className="mx-auto my-8 w-[300px]" />
       </div>
       <Container>
-        <img src={Photof3} className="rounded-[15px] mb-10" alt="" />
+        <AttendanceGuests />
       </Container>
     </ForthPagePart>
   );
